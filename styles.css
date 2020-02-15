@@ -1,7 +1,7 @@
 /********************************* NATIVE ELS & GENERAL STYLES *********************************/
 
 html, body {
-  color: #576574;
+  color: #373648;
   font-size: 14px;
   margin: 0;
   font-family: 'Josefin Slab', serif;
@@ -22,7 +22,7 @@ body.modal-active::after {
 }
 
 a {
-  color: #576574;
+  color: #373648;
   text-decoration: none;
 }
 
