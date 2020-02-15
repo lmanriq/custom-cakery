@@ -10,6 +10,13 @@ document.querySelector(".hamburger").addEventListener("click", () => {
   }
 });
 
+document.querySelector(".hamburger").addEventListener("keyup", () => {
+  if (!menu.classList.contains("active")) {
+    menu.classList.add("active");
+    close.classList.add("active")
+  }
+});
+
 document.querySelector(".close").addEventListener("click", () => {
   if (close.classList.contains("active")) {
     close.classList.remove("active");
@@ -48,7 +55,7 @@ if (document.querySelector("#order")) {
 
   document.querySelector(".modal-button").addEventListener("click", () => {
     if (document.querySelector(".modal-email-field").value) {
-      document.querySelector(".modal-content").innerHTML = 
+      document.querySelector(".modal-content").innerHTML =
       "<h3>Your coupon code is <span class='green'>cakelovers</span></h3>"
     }
   })
