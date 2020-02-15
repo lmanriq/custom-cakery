@@ -2,7 +2,7 @@
 
 html, body {
   color: #373648;
-  font-size: 14px;
+  font-size: 16px;
   margin: 0;
   font-family: 'Josefin Slab', serif;
   display: flex;
@@ -27,7 +27,7 @@ a {
 }
 
 form {
-  background-color: rgba(255, 255, 255, .7);
+  background-color: rgba(255, 255, 255, .9);
   margin-bottom: 25px;
   padding: 25px;
   width: 600px;
@@ -108,6 +108,7 @@ h4 {
 
 .menu.active {
   display: block;
+  height: auto;
 }
 
 .links {
@@ -118,7 +119,7 @@ h4 {
 
 .cake-review {
   display: block;
-  margin: 0 auto;
+  margin: auto;
   max-width: 80%;
 }
 
