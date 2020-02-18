@@ -11,7 +11,7 @@ document.querySelector(".hamburger").addEventListener("click", () => {
 });
 
 document.querySelector(".hamburger").addEventListener("keyup", () => {
-  if (!menu.classList.contains("active")) {
+  if (!menu.classList.contains("active") && event.keyCode === 13) {
     menu.classList.add("active");
     close.classList.add("active")
   }

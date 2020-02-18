@@ -51,8 +51,8 @@ button {
 
 h1 {
   text-align: center;
-  font-size: 50px;
-  margin: 45px 0;
+  font-size: 200%;
+  margin: 10% 0;
 }
 
 h4 {
@@ -66,6 +66,7 @@ h4 {
 
 .content {
   flex: 1 0 auto;
+  width: 100%;
 }
 
 /********************************* HEADER *********************************/
@@ -76,6 +77,11 @@ h4 {
   display: flex;
   flex-direction: column;
   margin-bottom: 65px;
+}
+
+.logo img {
+  width: 85%;
+  /* margin-left: 10%; */
 }
 
 .hamburger {
@@ -131,12 +137,14 @@ h4 {
   text-align: center;
   height: 50px;
   flex-shrink: 0;
+  width: 100%;
 }
 
 /********************************* LANDING PAGE *********************************/
 
 .medium-image-text img {
-  width: 400px;
+  margin-left: 10%;
+  width: 60%;
 }
 
 /********************************* ORDER PAGE *********************************/
@@ -182,7 +190,7 @@ h4 {
 }
 
 .gallery-item img {
-  min-width: 300px;
+  /* min-width: 300px; */
   width: 100%;
 }
 
@@ -206,6 +214,7 @@ h4 {
 /********************************* HELPERS *********************************/
 
 .flex {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -223,7 +232,12 @@ h4 {
 .medium-image {
   border: dotted 20px #ffcccc;
   display: block;
-  width: 600px;
+  margin-left: 10%;
+  width: 60%;
+}
+
+.box {
+  width: 50%;
 }
 
 .subtext {
@@ -233,4 +247,27 @@ h4 {
 
 .margin-top--small {
   margin-top: 15px;
+}
+
+@media only screen
+and (max-device-width : 812px) {
+  .content {
+    padding: 15px;
+    width: 100%;
+  }
+
+  form {
+    width: 90%;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .flex {
+    flex-direction: column !important;
+  }
+
+  .box {
+    width: 90%;
+    text-align: center;
+  }
 }
